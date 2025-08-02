@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI for Data Editing</title>
+  <style>
+    /* ——— basic, lightweight styling ——— */
+    :root { --accent:#0a84ff; --gray:#666; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+    body    { margin:0; line-height:1.5; color:#222; }
+    header  { background:var(--accent); color:#fff; padding:2.5rem 1rem; text-align:center; }
+    h1      { margin:0 0 .5rem; font-size:2rem; }
+    nav a   { color:#fff; text-decoration:underline; margin:0 .25rem; }
+    main    { max-width:900px; margin:2rem auto; padding:0 1rem; }
+    section { margin-bottom:2.5rem; }
+    h2      { color:var(--accent); border-bottom:2px solid var(--accent); padding-bottom:.25rem; }
+    ul      { padding-left:1.25rem; }
+    footer  { text-align:center; font-size:.9rem; color:var(--gray); margin:3rem 0 1rem; }
+    @media (prefers-color-scheme:dark){
+      body{background:#121212;color:#ddd;}
+      header{background:#1f6fe5;}
+      h2{border-color:#1f6fe5;}
+      nav a{color:#fff;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI for Data Editing</h1>
+  <p>Research • Data • Community</p>
+  <nav>
+    <a href="/KDD25-workshop/">KDD&nbsp;2025&nbsp;Workshop</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Welcome to the <strong>AI for Data Editing</strong> project homepage. Here you’ll find our research
+      outputs, datasets, and community updates.
+    </p>
+  </section>
+
+  <section id="studies">
+    <h2>Related&nbsp;Studies</h2>
+    <ul>
+      <li><em>AI</em>, W.&nbsp;Ying, N.&nbsp;Gong, X.&nbsp;Wang, Y.&nbsp;Fu. <strong>npj Artificial Intelligence</strong> 1&nbsp;(1),&nbsp;10.</li>
+      <li><em>Agentic Feature Augmentation: Unifying Selection and Generation with Teaming, Planning, and Memories</em>,
+          N.&nbsp;Gong, S.&nbsp;Dong, H.&nbsp;Bai, X.&nbsp;Wang, W.&nbsp;Ying, Y.&nbsp;Fu. arXiv:2505.15076.</li>
+      <li><em>Unsupervised Feature Transformation via In-Context Generation, Generator-Critic LLM Agents, and Duet-Play Teaming</em>,
+          N.&nbsp;Gong, X.&nbsp;Wang, W.&nbsp;Ying, H.&nbsp;Bai, S.&nbsp;Dong, H.&nbsp;Chen, Y.&nbsp;Fu. arXiv:2504.21304.</li>
+      <li><em>Evolutionary Large Language Model for Automated Feature Transformation</em>,
+          N.&nbsp;Gong, C.&nbsp;K.&nbsp;Reddy, W.&nbsp;Ying, H.&nbsp;Chen, Y.&nbsp;Fu. <strong>AAAI&nbsp;2023</strong> 39&nbsp;(16),&nbsp;16844–16851.</li>
+    </ul>
+  </section>
+
+  <!-- add more sections (Datasets, News, People, etc.) as needed -->
+
+</main>
+
+<footer>
+  © <span id="year"></span> AI for Data Editing &nbsp;|&nbsp;
+  <a href="https://github.com/ai-for-data-editing" style="color:inherit;">GitHub&nbsp;Org</a>
+</footer>
+
+<script>
+  /* auto-update year in footer */
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
